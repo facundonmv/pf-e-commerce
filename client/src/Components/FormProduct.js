@@ -1,8 +1,11 @@
 import React ,{useState} from 'react'
 import './FormProduct.css'
 import Input from './formInput'
+import { crearProducto } from '../Redux/actions'
+import { useSelector , useDispatch} from 'react-redux';
 
 const FormProduct = () => {
+  const dispatch = useDispatch()
   const[titulo, setTitulo] = useState({campo:'',valido:null})
   const[precio, setPrecio] = useState({campo:'',valido:null})
   const[size, setSize] = useState({campo:'',valido:null})
@@ -15,6 +18,16 @@ const FormProduct = () => {
 
     if(titulo.valido === 'true' && precio.valido === 'true' && size.valido === 'true'){
       SetvalidarForm(true)
+      dispatch(crearProducto ({
+          name:titulo.campo,
+          description: '2',
+          image:"https://www.tiendafacil.com.ar/tienda/uploads/600x600/1657407840_30d24c2a.jpg",
+          price:precio.campo,
+          stock:"2",
+          category:"llaveros",
+           size:size.campo
+         }))
+     
       setTitulo({campo:'',valido:null})
       setPrecio({campo:'',valido:null})
       setSize({campo:'',valido:null})

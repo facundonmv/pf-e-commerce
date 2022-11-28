@@ -9,11 +9,20 @@ const initialState={
 function rootReducer(state = initialState, action){
     switch (action.type) {
         case "GET_PRODUCT" :
+          
+            return{
+                ...state,
+                product: action.payload, 
+            }
             
-            break;
+
+        case "POST_PRODUCT":
+                return{
+                    ...state
+                }
     
         default:
-            break;
+            return state
     }
 
 }
