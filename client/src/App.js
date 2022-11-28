@@ -1,24 +1,18 @@
 import "./App.css";
-import {BrowserRouter,Route, Switch } from 'react-router-dom'
 import React from "react";
-import Home from './Components/Home';
-import NavBar from './Components/NavBar'
-import FormProduct from "./Components/FormProduct";
+import { Route, Switch } from "react-router-dom";
 
 
 function App() {
-
   return (
-    <BrowserRouter>
-    <NavBar/>
-    <div className="App">
+    
+    <>
+    
       <Switch>
-    <Route exact path='/' ><Home/></Route>
-    <Route  path='/create' component={ FormProduct } />
-    </Switch>
  
-    </div>
-    </BrowserRouter>
+      </Switch>
+    </>
   );
 }
-export default App; 
+
+export default App;
