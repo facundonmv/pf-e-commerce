@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './card.css'
 
 const Card = ({nombre , image}) => {
@@ -6,7 +7,7 @@ const Card = ({nombre , image}) => {
     <div className="container3">
   <div className="card">
     <div className="imgBx">
-      <img src={image}/>
+      <img src={image} alt="" />
     </div>
     <div className="contentBx">
       <h2>{nombre}</h2>
@@ -23,7 +24,7 @@ const Card = ({nombre , image}) => {
         <span></span>
         <span></span>
       </div> */}
-      <a href="#">Buy Now</a>
+      <Link >Buy Now</Link>
     </div>
   </div>
 </div>

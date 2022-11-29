@@ -1,0 +1,48 @@
+#hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/image.png");
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+    position: relative;
+    left: 120px;
+    font-size: 20px;
+}
+
+#hero h2 {
+    color: rgb(62, 161, 128);
+    position: relative;
+    left: 80px;
+    font-size: 30px;
+}
+#hero p {
+    position: relative;
+    left: 60px;
+    top: 60px;
+    color: rgb(162, 162, 159);
+}
+#hero h1 {
+    position: relative;
+    left: 80px;
+    font-size: 30px;
+}
+
+#hero a {
+    background-image: url("../images/button.png");
+    background-color: transparent;
+    color: black;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    position: relative;
+    top: 100px;
+    text-decoration: none;
+    left: 100px;
+}
